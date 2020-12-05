@@ -1,0 +1,9 @@
+{
+	"configurations": [
+		{
+			"name": "SeparatedEditor Editor Win64 Development (Separated)",
+			"intelliSenseMode": "msvc-x64",
+			"compileCommands": "C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\.vscode\\compileCommands_Separated.json"
+		}
+	]
+}

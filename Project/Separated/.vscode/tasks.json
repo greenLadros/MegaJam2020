@@ -1,0 +1,977 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Separated Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win32",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"Win64",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Shipping",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Separated IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "Separated IOS Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Separated",
+				"IOS",
+				"Test",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SeparatedEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SeparatedEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SeparatedEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		},
+		{
+			"label": "SeparatedEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SeparatedEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\USER\\Desktop\\MegaJam2020-Project\\Project\\Separated\\Separated.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE_4.26"
+			}
+		}
+	]
+}
