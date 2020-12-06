@@ -36,6 +36,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("MoveXAxis", this, &AMainCharacter::MoveXAxis);
 	PlayerInputComponent->BindAxis("LookYAxis", this, &AMainCharacter::LookYAxis);
 	PlayerInputComponent->BindAxis("LookXAxis", this, &AMainCharacter::LookXAxis);
+	PlayerInputComponent->BindAction("Jump",EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 }
 
 void AMainCharacter::LookXAxis(float AxisValue)
@@ -51,9 +52,6 @@ void AMainCharacter::LookYAxis(float AxisValue)
 void AMainCharacter::MoveYAxis(float AxisValue)
 {
 	AddMovementInput(GetActorForwardVector(), AxisValue);
-        // Send axis speed to the AnimInstance to be used in Animation Blueprint.
-	UMainCharacterAnimInstance* AnimInstance = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
-	AnimInstance->AnimationSpeed = AxisValue;
 }
 
 void AMainCharacter::MoveXAxis(float AxisValue)
