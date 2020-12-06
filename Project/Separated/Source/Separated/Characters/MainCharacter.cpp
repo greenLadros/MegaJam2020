@@ -2,6 +2,7 @@
 
 
 #include "MainCharacter.h"
+#include "Separated/AnimInstances/MainCharacterAnimInstance.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -50,6 +51,9 @@ void AMainCharacter::LookYAxis(float AxisValue)
 void AMainCharacter::MoveYAxis(float AxisValue)
 {
 	AddMovementInput(GetActorForwardVector(), AxisValue);
+        // Send axis speed to the AnimInstance to be used in Animation Blueprint.
+	UMainCharacterAnimInstance* AnimInstance = Cast<UMainCharacterAnimInstance>(GetMesh()->GetAnimInstance());
+	AnimInstance->AnimationSpeed = AxisValue;
 }
 
 void AMainCharacter::MoveXAxis(float AxisValue)
