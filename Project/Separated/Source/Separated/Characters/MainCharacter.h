@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "MainCharacter.generated.h"
 
+
 UCLASS()
 class SEPARATED_API AMainCharacter : public ACharacter
 {
@@ -14,6 +15,8 @@ class SEPARATED_API AMainCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AMainCharacter();
+
+	
 
 protected:
 	// Called when the game starts or when spawned
@@ -31,5 +34,4 @@ private:
 	void MoveYAxis(float AxisValue);
 	void LookXAxis(float AxisValue);
 	void LookYAxis(float AxisValue);
-	
 };
